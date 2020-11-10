@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(68, 67, 67);
+}
+.container {
+  width: 50%;
+  height: 80vh;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.bulb-off {
+  background-image: url(img/bulb\ off.jpg);
+  margin: 0 auto;
+  width: 50%;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bulb-on {
+  background-image: url(img/bulb\ on.jpg);
+  margin: 0 auto;
+  width: 50%;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+button {
+  background-color: rgb(255, 255, 0);
+  font-size: 25px;
+  padding: 0px 20px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
