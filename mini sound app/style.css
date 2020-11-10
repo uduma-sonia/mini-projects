@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(241, 224, 187),
+    rgb(132, 224, 240)
+  );
+}
+
+header h1 {
+  margin: 50px 0px 30px 0px;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px white;
+}
+
+header p {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+@keyframes changeLetter {
+  0% {
+    content: "click on square";
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    content: "More Songs Coming Soon!";
+  }
+}
+
+header p::after {
+  animation: changeLetter 12s linear infinite alternate;
+  content: "click on square";
+}
+
+.menu-container {
+  display: flex;
+}
+
+.menu1 {
+  margin: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+hr {
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+.sounds {
+  width: 500px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 150px;
+  margin-top: 20px;
+}
+.sounds > div {
+  position: relative;
+  margin: 20px;
+  transition: 0.2s;
+  border-radius: 5px;
+}
+
+.sounds > div:hover {
+  box-shadow: 0 5px 10px 0 black;
+}
+
+.red img,
+.blue img,
+.purple img,
+.pink img,
+.orange img,
+.black img,
+.green img,
+.gray img {
+  width: 100px;
+  height: 100px;
+}
+
+.fas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+}
+.disappear {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .app {
+    height: 120vh;
+    background-image: linear-gradient(
+      to right,
+      rgb(63, 32, 32),
+      rgb(155, 219, 36)
+    );
+  }
+  .sounds {
+    width: 350px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    margin: 20px 15px 0px 0px;
+    left: 0px;
+  }
+  .sounds > div {
+    position: relative;
+    height: 90px;
+    width: 90px;
+    margin: 8px;
+    border-radius: 5px;
+  }
+
+  .red img,
+  .blue img,
+  .purple img,
+  .pink img,
+  .orange img,
+  .black img,
+  .green img,
+  .gray img {
+    width: 80px;
+    height: 80px;
+  }
+}
