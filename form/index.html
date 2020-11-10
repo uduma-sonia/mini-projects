@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <p>Already have an account? <a href="">sign up</a></p>
+        <h1>Register</h1>
+        <form action="" class="form">
+          <label for="first">first name:</label><br />
+          <input type="text" id="first" name="first" required />
+          <br />
+          <label for="last">last name:</label> <br />
+          <input type="text" id="last" name="last" required />
+          <br />
+          <label for="email">email address:</label> <br />
+          <input type="email" id="email" name="email" required />
+          <br />
+          <p>Gender:</p>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="other">Others</label>
+          <input type="radio" name="gender" id="other" />
+          <br />
+
+          <label for="password">password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="8"
+            maxlength="15"
+            title="8 or more characters"
+            required
+          />
+
+          <label for="Cpassword">confirm password</label>
+          <input type="password" id="Cpassword" name="Cpassword" required />
+          <br />
+          <input type="checkbox" id="terms" required />
+          <label for="terms"
+            >I Accept <a href="#">Term Of Use & Privacy Policy</a></label
+          >
+          <br />
+
+          <button type="submit">REGISTER</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
